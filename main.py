@@ -1,14 +1,7 @@
-import telebot
-import config
-
-bot = telebot.TeleBot(config.token)
-print(bot.get_me())
-
-
-@bot.message_handler(content_types=["text"])
-def handle_text(massege):
-    bot.send_message(massege.chat.id, "Hi")
-
+from loader import dp
 
 if __name__ == '__main__':
-    bot.polling()
+    from aiogram import executor
+    from handlers import dp
+
+    executor.start_polling(dp)
