@@ -1,7 +1,9 @@
 from loader import session
 from config import api_key
 
-
+# фу-ия для получения погодв
+# принимает на вход параметры (долгота & широта)
+# возвращает обьект погода
 async def get_weather(lat: int, lon: int):
     params = {
         'lat': lat,

@@ -1,5 +1,7 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
+# переменная, в которой храним клавиатуру с основным меню
+# В будущем можно реализовать закоментированные команды
 main_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [

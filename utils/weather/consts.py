@@ -1,3 +1,4 @@
+# словарь состояний возвращаемых Yandex weather API
 conditions = {
     'clear': 'ясно.',
     'partly-cloudy': 'малооблачно.',

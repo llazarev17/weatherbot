@@ -4,7 +4,7 @@ from aiohttp import ClientSession
 
 from config import token
 
-storage = MemoryStorage()
-session = ClientSession()
-bot = Bot(token)
-dp = Dispatcher(bot, storage=storage)
+storage = MemoryStorage()  # храним данные ) в памяти
+session = ClientSession()  # обьект http сессии см. aiohttp документацию
+bot = Bot(token)  # обьект бот см документацию aigram
+dp = Dispatcher(bot, storage=storage)  # диспатчер (храниит все обработчики сообщений)
